@@ -8,8 +8,8 @@ import bg6 from './img/barbershop-1.jpg';
 
 const projectsInfo = [
   {
-    name: `Sid's Portfolio`,
-    details: 'React, sass',
+    name: `Portfolio 2022`,
+    details: 'React, Sass',
     url: '/',
     img: bg1
   },
@@ -21,28 +21,28 @@ const projectsInfo = [
   },
   {
     name: `Sid's Weather-App`,
-    details: 'HTML, css, Javascript, Weather API',
+    details: 'HTML, CSS, Javascript, Weather API',
     url: 'https://sids-weather-app.netlify.app',
     img: bg3
   },
   {
     name: 'Foodwhat?!',
-    details: 'React, sass',
+    details: 'React, Sass',
     url: 'https://foodwhat.netlify.app',
     img: bg2
   },
   {
-    name: 'Grocery todolist',
-    details: 'React, sass',
-    url: 'https://my-grocery-bud.netlify.app',
+    name: 'E-Drones Dashboard',
+    details: 'HTML, Sass, Javascript',
+    url: 'https://e-drones-dashboard.netlify.app/',
     img: bg4
   },
-  {
-    name: 'ACME Photography',
-    details: 'HTML, css, jquery',
-    url: 'https://acme-photos.netlify.app',
-    img: bg5
-  },
+  // {
+  //   name: 'ACME Photography',
+  //   details: 'HTML, css, jquery',
+  //   url: 'https://acme-photos.netlify.app',
+  //   img: bg5
+  // },
 ]
 
 export default projectsInfo;

@@ -11,7 +11,7 @@ const pages = [
   },
   {
     title: 'About Me',
-    description: 'Timeline/Skills...',
+    description: 'Skills/Passions...',
     cta: "Scout",
     aria: "Scout Sidney Oluoch",
     page: "about",

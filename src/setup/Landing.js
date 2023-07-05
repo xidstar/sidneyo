@@ -7,23 +7,21 @@ import cloud3 from './img/cloud3.svg';
 import cloud4 from './img/cloud4.svg';
 import cloud5 from './img/cloud5.svg';
 
+
 const Landing = () => {
+
   const animateClouds = (e) => {
     let moveX = ((window.innerWidth / 21) - e.pageX) * 0.05;
     let moveY = ((window.innerHeight / 21) - e.pageY) * 0.05;
 
-    document.querySelector('.cloud1').style.marginLeft = (moveX / -1.5) + 'px';
-    document.querySelector('.cloud1').style.marginTop = (moveY / 2) + 'px';
-    document.querySelector('.cloud2').style.marginLeft = (moveX / -4) + 'px';
-    document.querySelector('.cloud2').style.marginTop = (moveY / 2) + 'px';
-    document.querySelector('.cloud3').style.marginLeft = (moveX / 2) + 'px';
-    document.querySelector('.cloud3').style.marginTop = (moveY / -2) + 'px';
-    document.querySelector('.cloud4').style.marginLeft = (moveX / 2) + 'px';
-    document.querySelector('.cloud4').style.marginTop = (moveY / -1) + 'px';
-    document.querySelector('.cloud5').style.marginLeft = (moveX / -2) + 'px';
-    document.querySelector('.cloud5').style.marginTop = (moveY / .8) + 'px';
-    document.querySelector('.moon-light').style.marginLeft = (moveX / .9) + 'px';
-    document.querySelector('.moon-light').style.marginTop = (moveY / 2) + 'px';
+    document.querySelector('.cloud1').style.transform = `translate3d(${moveX / 0.5}px, ${moveY / 0.5}px, 0)`;
+    document.querySelector('.cloud2').style.transform = `translate3d(${moveX / 1}px, ${moveY / 1}px, 0)`;
+    document.querySelector('.cloud3').style.transform = `translate3d(${moveX / 0.7}px, ${moveY / 0.7}px, 0)`;
+    document.querySelector('.cloud4').style.transform = `translate3d(${moveX / 0.72}px, ${moveY / 0.72}px, 0)`;
+    document.querySelector('.cloud5').style.transform = `translate3d(${moveX / .9}px, ${moveY / .9}px, 0)`;
+
+    document.querySelector('.moon-light').style.marginLeft = (moveX / 0.6) + 'px';
+    document.querySelector('.moon-light').style.marginTop = (moveY / 0.6) + 'px';
   }
   return (
     <article id="home" onMouseMove={animateClouds}>
@@ -31,10 +29,10 @@ const Landing = () => {
         <div className="text-container">
           <h1>SIDNEY <br /> OLUOCH</h1>
           <div className="border-lines">
-            <span></span>
-            <span></span>
+            <span className="animate__animated animate__bounceInLeft"></span>
+            <span className="animate__animated animate__bounceInLeft"></span>
           </div>
-          <p>front-end developer / <br /> design enthusiast</p>
+          <p>Creative Developer / <br /> Passionately Curious...</p>
         </div>
       </div>
 
@@ -48,7 +46,7 @@ const Landing = () => {
         <img className="cloud cloud5" src={cloud5} alt="" />
       </div>
 
-      <BsChevronDown className="arrow-down" />
+      <BsChevronDown className="arrow-down animate__animated animate__bounce animate__infinite animate__slower" />
     </article>
   )
 }

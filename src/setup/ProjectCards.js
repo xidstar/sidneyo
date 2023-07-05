@@ -1,14 +1,15 @@
 import React from 'react';
 import projectsInfo from './ProjectsInfo';
+import Clouds from './clouds';
 
 const ProjectCards = () => {
   return (
     <section id="pjs" className="pjs">
       <div className="pj-info">
-        <div className="category"><span>01</span> PROJECTS</div>
+        <div className="category"><span>02</span> PROJECTS</div>
       </div>
       <div className="section-header">
-        <h3>Featured Projects</h3>
+        <h3>Sample Projects</h3>
       </div>
       <div className="pj-container">
         {projectsInfo.map((pj, id) => {
@@ -42,6 +43,7 @@ const ProjectCards = () => {
         })}
       </div>
       <a href="https://github.com/xidstar" target="_blank" className="more-pjs" aria-label="See more projects">See more</a>
+      <Clouds />
     </section>
   )
 }

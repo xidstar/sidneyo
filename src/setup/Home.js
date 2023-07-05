@@ -7,7 +7,9 @@ import Landing from './Landing';
 import Modal from './ContactModal';
 
 function Homepage() {
+  
   return <>
+  
     <section className="star-bg">
       <Background />
       <div className="wrapper">

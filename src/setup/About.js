@@ -4,11 +4,13 @@ import AboutMe from './about-me'
 import Skillset from './skillset'
 import Cards from './cards-experience';
 import Timeline from './Timeline'
-import Footer from './footer'
+import Footer from './footer';
+import Scroll from './SmoothScroll';
 
-function About() {
+function About() { 
   return (
-    <section className="subpage about">
+    <section id="my-scrollbar" className="subpage about">
+      <Scroll />
       <AboutLanding />
       <AboutMe />
       <Cards />

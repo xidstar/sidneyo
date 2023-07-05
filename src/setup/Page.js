@@ -7,7 +7,7 @@ const Page = ({ pageId, title, description, cta, aria, page, id }) => {
   return (
     <article id={`#${pageId}`}>
       <div className="container">
-        <div className="text-container">
+        <div className="text-container home-text">
           <h3>{title}</h3>
           <div className="border-lines">
             <span></span>
@@ -16,7 +16,7 @@ const Page = ({ pageId, title, description, cta, aria, page, id }) => {
           <p>{description}</p>
           <Link to={`/${page}`} className="page-btn" aria-label={aria} onClick={id === 3 ? openModal : undefined} >{cta}</Link>
         </div>
-        <Link to={`/${page}`} className="img-wrapper"></Link>
+        <Link to={`/${page}`} className="img-wrapper home-img"></Link>
       </div>
     </article>
   )

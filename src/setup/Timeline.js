@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BsChevronDoubleRight } from "react-icons/bs";
 import jobsInfo from './jobsInfo';
 
+
 const Timeline = () => {
   const [loading, setLoading] = useState(true);
   const [jobs, setJobs] = useState([]);
@@ -20,17 +21,23 @@ const Timeline = () => {
     )
   }
 
-  const { company, title, dates, duties, id } = jobs[value];
+  const { company, img, title, dates, duties, id } = jobs[value];
 
   return (
     <section id="jobs" className="jobs">
       <div className="pj-info">
         <div className="category"><span>03</span> TIMELINE</div>
       </div>
+
+      <div className="section-header jobs-header">
+        <h3>Work Experience</h3>
+      </div>
+
       <div key={id} className="jobs-wrapper">
-        <div className="section-header jobs-header">
-          <h3>Work Experience</h3>
-        </div>
+        
+        <div className="circle circle-1"></div>
+        <div className="circle circle-2"></div>
+
         <div className="jobs-details">
           <div className="btn-container">
             {jobs.map((job, index) => {
@@ -42,6 +49,9 @@ const Timeline = () => {
             })}
           </div>
           <div className="info">
+            <div className="img-container">
+              <img src={img} alt={company} />
+            </div>
             <p className="company"><span>Company:</span> {company}</p>
             <p className="title"><span>Role:</span> {title}</p>
             <p className="dates">{dates}</p>

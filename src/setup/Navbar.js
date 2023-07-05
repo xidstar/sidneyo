@@ -23,8 +23,8 @@ const Navbar = () => {
       <nav className={`${showMenu ? "global-nav show-menu" : "global-nav"}`}>
         <ul>
           <li><Link to="/" onClick={() => toggleMenu()}>HOME</Link></li>
-          <li><Link to="/projects" onClick={() => toggleMenu()}>PROJECTS</Link></li>
-          <li><Link to="/about" onClick={() => toggleMenu()}>ABOUT ME</Link></li>
+          <li><Link to="/projects#projectsTop" onClick={() => toggleMenu()}>PROJECTS</Link></li>
+          <li><Link to="/about#aboutTop" onClick={() => toggleMenu()}>ABOUT ME</Link></li>
           <li><Link to="/#contact" onClick={() => toggleMenu()}>CONTACT</Link></li>
         </ul>
       </nav>

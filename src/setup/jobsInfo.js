@@ -1,33 +1,41 @@
+import puppet from './img/puppet.jpg'
+import tahzoo from './img/tahzoo.jpg'
+import bounteous from './img/bounteous.jpg'
+
 const info = [
   {
     id: 1,
-    title: 'Front End Developer',
+    img: puppet,
+    title: 'Web Developer',
     dates: 'January 2022 - present',
     duties: [
-      "Design, develop, unit test and deploy web based solutions using common standards and frameworks.",
-      "Understand the challenges being addressed by engagement and collaboration with team members, clients, and stakeholders to deliver technical solutions that meet the unique client needs.",
-      "Leverage the company's internal resources and training to continually develop relevant knowledge and skill."
+      "Formulated and implemented improvements on cleanup processes and performance, minimizing downtime by 10%.",
+      "Collaborated with project managers and creative teams to deliver original, efficient solutions.",
+      "Contributed to code reviews and helped provide solutions during team collaborations on tasks and problems."
     ],
-    company: 'Puppet Inc.'
+    company: 'Puppet'
   },
   {
     id: 2,
+    img: tahzoo,
     title: 'Front End Developer',
     dates: 'October 2020 - January 2022',
     duties: [
-      "Help Clients Maximize the value of their web presence by building accessible, high-performance websites and applications with the latest standards.",
-      "Analyze and improve efficiency, scalability and stability of products and services",
-      "Convert photoshop mockups and wireframes into valid, cross-browser websites."
+      "Diagnosed and troubleshot different websites of the company's critical clients by deploying updated knowledge of modern technologies and industry standards.",
+      "Participated in weekly meetings with stakeholders, supported brainstorming and idea generation.",
+      "Provide technical mentoring to more junior resources."
     ],
     company: 'Tahzoo'
   },
   {
     id: 3,
+    img: bounteous,
     title: 'Front End Developer',
     dates: 'August 2018 - October 2020',
     duties: [
-      "Integrating and collaborating with team of developers, gaining more skills and experience for career advancement.",
-      "Provide technical mentoring and leadership to junior resources."
+      "Administered the full life cycle of software development for 6 critical projects of the company with 100% on-time delivery.",
+      "Leveraged the company's internal resources to continually develop relevant knowledge and skills.",
+      "Developed user-friendly architecture; provided support and customer service."
     ],
     company: 'Bounteous'
   }

@@ -2,7 +2,7 @@ import HTML from './img/html_logo.svg';
 import CSS from './img/css_logo.svg';
 import SASS from './img/sass.svg';
 import JS from './img/javascript_logo.svg';
-import PS from './img/photoshop-cc.svg';
+import PS from './img/photoshop.svg';
 import REACT from './img/React.svg';
 import VUE from './img/Vue.svg';
 import CMS from './img/wp.svg';
@@ -29,12 +29,12 @@ const skillsData = [
     level: 90
   },
   {
-    name: 'Design Tools (Adobe CS, Figma)',
+    name: 'Design Tools',
     logo: PS,
     level: 80
   },
   {
-    name: 'CMS / Headless CMS (Wordpress, Contentful)',
+    name: 'CMS / Headless CMS',
     logo: CMS,
     level: 80
   },

@@ -1,21 +1,21 @@
-import React, { useState } from 'react'
-import SkillsLogo from './skills-logo';
+import React, { useState } from 'react';
 import skillsData from './skillsInfo';
 import Resume from './img/Sidney-Oluoch-resume.pdf'
 import { HiOutlineArrowLeft } from "react-icons/hi";
 
 function SKillset() {
-
   const [skills, setSkills] = useState(skillsData);
 
   return (
     <>
       <section className="skillset">
-        <div className="pj-info">
+        <div className="pj-info animate__animated animate__slideInLeft">
           <div className="category"><span>03</span> SKILLSET</div>
         </div>
         <div className="container">
-          <SkillsLogo />
+          <div class="section-header jobs-header">
+            <h3>Technical Skills</h3>
+          </div>
           <div className="row">
             <div className="col">
               <ul>
